@@ -22,6 +22,12 @@ final class ReviewListBookController: UIViewController {
         presenter.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        presenter.viewWillAppear()
+    }
+    
 }
 
 extension ReviewListBookController: ReviewListProtocal {
@@ -31,7 +37,7 @@ extension ReviewListBookController: ReviewListProtocal {
         
         let rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                  target: self,
-                                                 action: nil)
+                                                 action: #selector(didTapRightBarButtonItem))
         
         navigationItem.rightBarButtonItem = rightBarButtonItem
     }
@@ -41,6 +47,22 @@ extension ReviewListBookController: ReviewListProtocal {
         tableView.snp.makeConstraints{
             $0.edges.equalToSuperview()
         }
-        
+    }
+    
+    func presentToReviewWriteViewController(){
+        let vc = UINavigationController(rootViewController: ReviewWriteViewController())
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
+    
+    func reloadTableView(){
+        tableView.reloadData()
+        print("최신 도서리뷰 목록 보여주기")
+    }
+}
+
+private extension ReviewListBookController {
+    @objc func didTapRightBarButtonItem(){
+        presenter.didTapRightBarButtonItem()
     }
 }
