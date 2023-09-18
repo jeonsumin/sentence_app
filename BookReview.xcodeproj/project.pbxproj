@@ -23,6 +23,10 @@
 		768C6C942AB7EA6200ED7DB8 /* ReviewWritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C932AB7EA6200ED7DB8 /* ReviewWritePresenter.swift */; };
 		768C6C962AB80EAD00ED7DB8 /* SearchBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C952AB80EAD00ED7DB8 /* SearchBookViewController.swift */; };
 		768C6C982AB80EB900ED7DB8 /* SearchBookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C972AB80EB900ED7DB8 /* SearchBookPresenter.swift */; };
+		768C6C9B2AB8162600ED7DB8 /* BookSearchRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C9A2AB8162600ED7DB8 /* BookSearchRequestModel.swift */; };
+		768C6C9E2AB816AF00ED7DB8 /* BookSearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C9D2AB816AF00ED7DB8 /* BookSearchResponseModel.swift */; };
+		768C6CA02AB8178000ED7DB8 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C9F2AB8178000ED7DB8 /* Book.swift */; };
+		768C6CA22AB817C500ED7DB8 /* BookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6CA12AB817C500ED7DB8 /* BookSearchManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		768C6C932AB7EA6200ED7DB8 /* ReviewWritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenter.swift; sourceTree = "<group>"; };
 		768C6C952AB80EAD00ED7DB8 /* SearchBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookViewController.swift; sourceTree = "<group>"; };
 		768C6C972AB80EB900ED7DB8 /* SearchBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookPresenter.swift; sourceTree = "<group>"; };
+		768C6C9A2AB8162600ED7DB8 /* BookSearchRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchRequestModel.swift; sourceTree = "<group>"; };
+		768C6C9D2AB816AF00ED7DB8 /* BookSearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResponseModel.swift; sourceTree = "<group>"; };
+		768C6C9F2AB8178000ED7DB8 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		768C6CA12AB817C500ED7DB8 /* BookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +123,8 @@
 			children = (
 				768C6C532AB7DF5800ED7DB8 /* AppDelegate.swift */,
 				768C6C552AB7DF5800ED7DB8 /* SceneDelegate.swift */,
+				768C6CA32AB817C900ED7DB8 /* Manager */,
+				768C6C9C2AB8162C00ED7DB8 /* Models */,
 				768C6C8F2AB7E44800ED7DB8 /* Scene */,
 				768C6C5C2AB7DF5900ED7DB8 /* Assets.xcassets */,
 				768C6C5E2AB7DF5900ED7DB8 /* LaunchScreen.storyboard */,
@@ -154,7 +164,7 @@
 			children = (
 				768C6C902AB7EA3C00ED7DB8 /* ReviewWrite */,
 				768C6C8E2AB7E43F00ED7DB8 /* ReviewList */,
-				768C6C992AB80EBD00ED7DB8 /* Search */,
+				768C6C992AB80EBD00ED7DB8 /* SearchBook */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -168,13 +178,31 @@
 			path = ReviewWrite;
 			sourceTree = "<group>";
 		};
-		768C6C992AB80EBD00ED7DB8 /* Search */ = {
+		768C6C992AB80EBD00ED7DB8 /* SearchBook */ = {
 			isa = PBXGroup;
 			children = (
 				768C6C952AB80EAD00ED7DB8 /* SearchBookViewController.swift */,
 				768C6C972AB80EB900ED7DB8 /* SearchBookPresenter.swift */,
 			);
-			path = Search;
+			path = SearchBook;
+			sourceTree = "<group>";
+		};
+		768C6C9C2AB8162C00ED7DB8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				768C6C9F2AB8178000ED7DB8 /* Book.swift */,
+				768C6C9A2AB8162600ED7DB8 /* BookSearchRequestModel.swift */,
+				768C6C9D2AB816AF00ED7DB8 /* BookSearchResponseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		768C6CA32AB817C900ED7DB8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				768C6CA12AB817C500ED7DB8 /* BookSearchManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,11 +347,15 @@
 			files = (
 				768C6C942AB7EA6200ED7DB8 /* ReviewWritePresenter.swift in Sources */,
 				768C6C582AB7DF5800ED7DB8 /* ReviewListBookController.swift in Sources */,
+				768C6C9B2AB8162600ED7DB8 /* BookSearchRequestModel.swift in Sources */,
+				768C6CA02AB8178000ED7DB8 /* Book.swift in Sources */,
 				768C6C542AB7DF5800ED7DB8 /* AppDelegate.swift in Sources */,
 				768C6C962AB80EAD00ED7DB8 /* SearchBookViewController.swift in Sources */,
+				768C6C9E2AB816AF00ED7DB8 /* BookSearchResponseModel.swift in Sources */,
 				768C6C922AB7EA5000ED7DB8 /* ReviewWriteViewController.swift in Sources */,
 				768C6C982AB80EB900ED7DB8 /* SearchBookPresenter.swift in Sources */,
 				768C6C8D2AB7E43C00ED7DB8 /* ReviewListPresenter.swift in Sources */,
+				768C6CA22AB817C500ED7DB8 /* BookSearchManager.swift in Sources */,
 				768C6C562AB7DF5800ED7DB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
