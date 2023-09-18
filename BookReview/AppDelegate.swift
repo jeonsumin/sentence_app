@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BookReview
 //
-//  Created by deepvisions on 2023/09/18.
+//  Created by terry on 2023/09/18.
 //
 
 import UIKit

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		768C6C542AB7DF5800ED7DB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C532AB7DF5800ED7DB8 /* AppDelegate.swift */; };
 		768C6C562AB7DF5800ED7DB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C552AB7DF5800ED7DB8 /* SceneDelegate.swift */; };
-		768C6C582AB7DF5800ED7DB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C572AB7DF5800ED7DB8 /* ViewController.swift */; };
+		768C6C582AB7DF5800ED7DB8 /* ReviewListBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C572AB7DF5800ED7DB8 /* ReviewListBookController.swift */; };
 		768C6C5D2AB7DF5900ED7DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768C6C5C2AB7DF5900ED7DB8 /* Assets.xcassets */; };
 		768C6C602AB7DF5900ED7DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768C6C5E2AB7DF5900ED7DB8 /* LaunchScreen.storyboard */; };
 		768C6C6B2AB7DF5900ED7DB8 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C6A2AB7DF5900ED7DB8 /* BookReviewTests.swift */; };
@@ -18,6 +18,7 @@
 		768C6C852AB7E1D900ED7DB8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 768C6C842AB7E1D900ED7DB8 /* SnapKit */; };
 		768C6C882AB7E21B00ED7DB8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 768C6C872AB7E21B00ED7DB8 /* Alamofire */; };
 		768C6C8B2AB7E23E00ED7DB8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 768C6C8A2AB7E23E00ED7DB8 /* Kingfisher */; };
+		768C6C8D2AB7E43C00ED7DB8 /* ReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C8C2AB7E43C00ED7DB8 /* ReviewListPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +42,7 @@
 		768C6C502AB7DF5800ED7DB8 /* BookReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768C6C532AB7DF5800ED7DB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768C6C552AB7DF5800ED7DB8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		768C6C572AB7DF5800ED7DB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		768C6C572AB7DF5800ED7DB8 /* ReviewListBookController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListBookController.swift; sourceTree = "<group>"; };
 		768C6C5C2AB7DF5900ED7DB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		768C6C5F2AB7DF5900ED7DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768C6C612AB7DF5900ED7DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +51,7 @@
 		768C6C702AB7DF5900ED7DB8 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768C6C742AB7DF5900ED7DB8 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		768C6C762AB7DF5900ED7DB8 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		768C6C8C2AB7E43C00ED7DB8 /* ReviewListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,7 @@
 			children = (
 				768C6C532AB7DF5800ED7DB8 /* AppDelegate.swift */,
 				768C6C552AB7DF5800ED7DB8 /* SceneDelegate.swift */,
-				768C6C572AB7DF5800ED7DB8 /* ViewController.swift */,
+				768C6C8F2AB7E44800ED7DB8 /* Scene */,
 				768C6C5C2AB7DF5900ED7DB8 /* Assets.xcassets */,
 				768C6C5E2AB7DF5900ED7DB8 /* LaunchScreen.storyboard */,
 				768C6C612AB7DF5900ED7DB8 /* Info.plist */,
@@ -128,6 +130,23 @@
 				768C6C762AB7DF5900ED7DB8 /* BookReviewUITestsLaunchTests.swift */,
 			);
 			path = BookReviewUITests;
+			sourceTree = "<group>";
+		};
+		768C6C8E2AB7E43F00ED7DB8 /* ReviewList */ = {
+			isa = PBXGroup;
+			children = (
+				768C6C572AB7DF5800ED7DB8 /* ReviewListBookController.swift */,
+				768C6C8C2AB7E43C00ED7DB8 /* ReviewListPresenter.swift */,
+			);
+			path = ReviewList;
+			sourceTree = "<group>";
+		};
+		768C6C8F2AB7E44800ED7DB8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				768C6C8E2AB7E43F00ED7DB8 /* ReviewList */,
+			);
+			path = Scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +289,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768C6C582AB7DF5800ED7DB8 /* ViewController.swift in Sources */,
+				768C6C582AB7DF5800ED7DB8 /* ReviewListBookController.swift in Sources */,
 				768C6C542AB7DF5800ED7DB8 /* AppDelegate.swift in Sources */,
+				768C6C8D2AB7E43C00ED7DB8 /* ReviewListPresenter.swift in Sources */,
 				768C6C562AB7DF5800ED7DB8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -2,7 +2,7 @@
 //  BookReviewUITestsLaunchTests.swift
 //  BookReviewUITests
 //
-//  Created by deepvisions on 2023/09/18.
+//  Created by terry on 2023/09/18.
 //
 
 import XCTest
