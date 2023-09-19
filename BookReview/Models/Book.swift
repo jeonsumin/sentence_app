@@ -15,4 +15,10 @@ struct Book: Decodable {
     
     ///책 표지 이미지 URL
     var imageUrl: URL? { return URL(string: image ?? "" ) }
+    
+    //테스트를 위한 코드
+    init(title:String, imageUrl: String?){
+        self.title = title
+        self.image = imageUrl
+    }
 }

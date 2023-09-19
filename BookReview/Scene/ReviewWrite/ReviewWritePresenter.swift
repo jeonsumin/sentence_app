@@ -17,13 +17,17 @@ protocol ReviewWriteProtocol {
 }
 final class ReviewWritePresenter{
     private let viewController: ReviewWriteProtocol
-    private let userDefaultManager = UserDefaultsManager()
-    private var book: Book?
+    private let userDefaultManager: UserDefaultsManagerProtocol
+    var book: Book? // 테스트를 위해 임시 private 제거 
     
     let contentsTextViewPlaceHolderText = "내용을 입력해주세요."
     
-    init(viewController: ReviewWriteProtocol) {
+    init(
+        viewController: ReviewWriteProtocol,
+        userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()
+    ) {
         self.viewController = viewController
+        self.userDefaultManager = userDefaultsManager
     }
     
     func viewDidLoad(){
@@ -43,7 +47,7 @@ final class ReviewWritePresenter{
             contentsText != contentsTextViewPlaceHolderText
         else { return }
         
-        let bookReview = BookReview(title: book.title, contents: contentsText ?? "" , imageURL: book.imageUrl)
+        let bookReview = BookReview(title: book.title, contents: contentsText , imageURL: book.imageUrl)
         userDefaultManager.setReviews(bookReview)
         viewController.close()
     }

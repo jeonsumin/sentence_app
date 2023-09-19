@@ -12,7 +12,7 @@
 		768C6C582AB7DF5800ED7DB8 /* ReviewListBookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C572AB7DF5800ED7DB8 /* ReviewListBookController.swift */; };
 		768C6C5D2AB7DF5900ED7DB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768C6C5C2AB7DF5900ED7DB8 /* Assets.xcassets */; };
 		768C6C602AB7DF5900ED7DB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768C6C5E2AB7DF5900ED7DB8 /* LaunchScreen.storyboard */; };
-		768C6C6B2AB7DF5900ED7DB8 /* BookReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C6A2AB7DF5900ED7DB8 /* BookReviewTests.swift */; };
+		768C6C6B2AB7DF5900ED7DB8 /* ReviewListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C6A2AB7DF5900ED7DB8 /* ReviewListPresenterTests.swift */; };
 		768C6C752AB7DF5900ED7DB8 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C742AB7DF5900ED7DB8 /* BookReviewUITests.swift */; };
 		768C6C772AB7DF5900ED7DB8 /* BookReviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6C762AB7DF5900ED7DB8 /* BookReviewUITestsLaunchTests.swift */; };
 		768C6C852AB7E1D900ED7DB8 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 768C6C842AB7E1D900ED7DB8 /* SnapKit */; };
@@ -29,6 +29,9 @@
 		768C6CA22AB817C500ED7DB8 /* BookSearchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6CA12AB817C500ED7DB8 /* BookSearchManager.swift */; };
 		768C6CA52AB8347A00ED7DB8 /* BookReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6CA42AB8347A00ED7DB8 /* BookReview.swift */; };
 		768C6CA72AB8353700ED7DB8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768C6CA62AB8353700ED7DB8 /* UserDefaultsManager.swift */; };
+		76E571082AB91AB900F2F8C7 /* MockReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E571072AB91AB900F2F8C7 /* MockReviewListViewController.swift */; };
+		76E5710A2AB91AF300F2F8C7 /* MockUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E571092AB91AF300F2F8C7 /* MockUserDefaultsManager.swift */; };
+		76E5710E2AB91C5A00F2F8C7 /* ReviewWritePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5710D2AB91C5A00F2F8C7 /* ReviewWritePresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +60,7 @@
 		768C6C5F2AB7DF5900ED7DB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768C6C612AB7DF5900ED7DB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768C6C662AB7DF5900ED7DB8 /* BookReviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		768C6C6A2AB7DF5900ED7DB8 /* BookReviewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewTests.swift; sourceTree = "<group>"; };
+		768C6C6A2AB7DF5900ED7DB8 /* ReviewListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewListPresenterTests.swift; sourceTree = "<group>"; };
 		768C6C702AB7DF5900ED7DB8 /* BookReviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookReviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		768C6C742AB7DF5900ED7DB8 /* BookReviewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITests.swift; sourceTree = "<group>"; };
 		768C6C762AB7DF5900ED7DB8 /* BookReviewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReviewUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -72,6 +75,10 @@
 		768C6CA12AB817C500ED7DB8 /* BookSearchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchManager.swift; sourceTree = "<group>"; };
 		768C6CA42AB8347A00ED7DB8 /* BookReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReview.swift; sourceTree = "<group>"; };
 		768C6CA62AB8353700ED7DB8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		76E571072AB91AB900F2F8C7 /* MockReviewListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockReviewListViewController.swift; sourceTree = "<group>"; };
+		76E571092AB91AF300F2F8C7 /* MockUserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsManager.swift; sourceTree = "<group>"; };
+		76E5710D2AB91C5A00F2F8C7 /* ReviewWritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewWritePresenterTests.swift; sourceTree = "<group>"; };
+		76E5710F2AB9256900F2F8C7 /* BookReview.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BookReview.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,7 @@
 		768C6C472AB7DF5700ED7DB8 = {
 			isa = PBXGroup;
 			children = (
+				76E5710F2AB9256900F2F8C7 /* BookReview.xctestplan */,
 				768C6C522AB7DF5800ED7DB8 /* BookReview */,
 				768C6C692AB7DF5900ED7DB8 /* BookReviewTests */,
 				768C6C732AB7DF5900ED7DB8 /* BookReviewUITests */,
@@ -140,7 +148,8 @@
 		768C6C692AB7DF5900ED7DB8 /* BookReviewTests */ = {
 			isa = PBXGroup;
 			children = (
-				768C6C6A2AB7DF5900ED7DB8 /* BookReviewTests.swift */,
+				76E5710C2AB91B1A00F2F8C7 /* Tests */,
+				76E5710B2AB91B1000F2F8C7 /* Mock */,
 			);
 			path = BookReviewTests;
 			sourceTree = "<group>";
@@ -209,6 +218,24 @@
 				768C6CA62AB8353700ED7DB8 /* UserDefaultsManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		76E5710B2AB91B1000F2F8C7 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				76E571092AB91AF300F2F8C7 /* MockUserDefaultsManager.swift */,
+				76E571072AB91AB900F2F8C7 /* MockReviewListViewController.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		76E5710C2AB91B1A00F2F8C7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				768C6C6A2AB7DF5900ED7DB8 /* ReviewListPresenterTests.swift */,
+				76E5710D2AB91C5A00F2F8C7 /* ReviewWritePresenterTests.swift */,
+			);
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -372,7 +399,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768C6C6B2AB7DF5900ED7DB8 /* BookReviewTests.swift in Sources */,
+				76E571082AB91AB900F2F8C7 /* MockReviewListViewController.swift in Sources */,
+				768C6C6B2AB7DF5900ED7DB8 /* ReviewListPresenterTests.swift in Sources */,
+				76E5710E2AB91C5A00F2F8C7 /* ReviewWritePresenterTests.swift in Sources */,
+				76E5710A2AB91AF300F2F8C7 /* MockUserDefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

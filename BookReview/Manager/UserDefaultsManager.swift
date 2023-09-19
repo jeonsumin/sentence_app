@@ -19,7 +19,7 @@ struct UserDefaultsManager: UserDefaultsManagerProtocol {
     func getReviews() -> [BookReview] {
         guard let data = UserDefaults.standard.data(forKey: Key.review.rawValue) else{ return [] }
         
-        return (try? PropertyListDecoder().decode([BookReview].self, from: data) ?? [] )!
+        return (try? PropertyListDecoder().decode([BookReview].self, from: data))!
     }
     
     func setReviews(_ newValue: BookReview) {
